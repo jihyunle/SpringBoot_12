@@ -12,7 +12,9 @@ import java.util.Map;
 
 @Component
 public class CloudinaryConfig {
+
     private Cloudinary cloudinary;
+
     @Autowired
     public CloudinaryConfig(@Value("${cloud.key}") String key,
                             @Value("${cloud.secret}") String secret,
